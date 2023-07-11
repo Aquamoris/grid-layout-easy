@@ -7,39 +7,62 @@ body {
 
 * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-.grid {
-    /*border: thin solid black;*/
+
+.wrapper {
     width: 90%;
     height: 90vh;
-    margin: 0 auto;
+    margin: 2% auto;
     border-radius: 24px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(100px, auto);
 }
 
-.title {
-    font-size: 24px;
-}
-
-img {
-    width: 25px;
-    height: 25px;
+.search__wrapper {
+    width: 80%;
+    /*height: 80%;*/
+    /*border: solid thin yellow;*/
 }
 
 a {
     text-decoration: none;
     color: #FFFFFF;
-    /*border: solid thin black;*/
-    height: 35px;
 }
 
-a:hover {
-    background-color: #F27251;
+/*a:hover {*/
+/*    background: #F27251;*/
+/*}*/
+
+.item {
+    border: solid thin black;
 }
+
+.item:hover {
+    background: #F27251;
+}
+
+.image {
+    width: 25px;
+    height: 25px;
+}
+
+.title-line {
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    font-size: 24px;
+    padding: 0 5px
+}
+
+.list {
+}
+
 
 .search {
     background-color: #FB896B;
@@ -50,39 +73,22 @@ a:hover {
     flex-direction: column;
 }
 
-.list {
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-}
+/*.cro {*/
+/*    background-color: #FB6B6B;*/
+/*}*/
 
-.title-line {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    width: 60%;
-}
+/*.social {*/
+/*    background-color: #F1A864;*/
+/*    border-top-right-radius: 24px;*/
+/*}*/
 
-.item {
-    margin: 2% 0;
-}
+/*.other {*/
+/*    background-color: #FBD36B;*/
+/*    border-bottom-left-radius: 24px;*/
+/*}*/
 
-.cro {
-    background-color: #FB6B6B;
-}
-
-.social {
-    background-color: #F1A864;
-    border-top-right-radius: 24px;
-}
-
-.other {
-    background-color: #FBD36B;
-    border-bottom-left-radius: 24px;
-}
-
-.booking {
-    background-color: #485258;
-    grid-column: 2/4;
-    border-bottom-right-radius: 24px;
-}
+/*.booking {*/
+/*    background-color: #485258;*/
+/*    grid-column: 2/4;*/
+/*    border-bottom-right-radius: 24px;*/
+/*}*/
