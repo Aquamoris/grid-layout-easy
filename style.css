@@ -23,9 +23,12 @@ body {
 }
 
 .search__wrapper {
-    width: 80%;
-    /*height: 80%;*/
+    width: 70%;
+    height: 40%;
     /*border: solid thin yellow;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 a {
@@ -38,7 +41,10 @@ a {
 /*}*/
 
 .item {
-    border: solid thin black;
+    height: 100%;
+    /*border: solid thin black;*/
+    display: flex;
+    align-items: center;
 }
 
 .item:hover {
@@ -70,25 +76,26 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
 }
 
-/*.cro {*/
-/*    background-color: #FB6B6B;*/
-/*}*/
 
-/*.social {*/
-/*    background-color: #F1A864;*/
-/*    border-top-right-radius: 24px;*/
-/*}*/
+/*______________________*/
+.cro {
+    background-color: #FB6B6B;
+}
 
-/*.other {*/
-/*    background-color: #FBD36B;*/
-/*    border-bottom-left-radius: 24px;*/
-/*}*/
+.social {
+    background-color: #F1A864;
+    border-top-right-radius: 24px;
+}
 
-/*.booking {*/
-/*    background-color: #485258;*/
-/*    grid-column: 2/4;*/
-/*    border-bottom-right-radius: 24px;*/
-/*}*/
+.other {
+    background-color: #FBD36B;
+    border-bottom-left-radius: 24px;
+}
+
+.booking {
+    background-color: #485258;
+    grid-column: 2/4;
+    border-bottom-right-radius: 24px;
+}
