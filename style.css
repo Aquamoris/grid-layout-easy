@@ -12,7 +12,7 @@ body {
 }
 
 
-.wrapper {
+.main-wrapper {
     width: 90%;
     height: 90vh;
     margin: 2% auto;
@@ -22,10 +22,9 @@ body {
     grid-auto-rows: minmax(100px, auto);
 }
 
-.search__wrapper {
+.wrapper {
     width: 70%;
     height: 45%;
-    /*border: solid thin yellow;*/
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -36,20 +35,31 @@ a {
     color: #FFFFFF;
 }
 
-/*a:hover {*/
-/*    background: #F27251;*/
-/*}*/
-
 .item {
     height: 100%;
-    /*border: solid thin black;*/
     display: flex;
     align-items: center;
     padding-left: 3%;
 }
 
-.item:hover {
+.search .item:hover {
     background: #F27251;
+}
+
+.cro .item:hover {
+    background: #FBD36B;
+}
+
+.social .item:hover {
+    background: #485258;
+}
+
+.other .item:hover {
+    background: #FB6B6B;
+}
+
+.other a {
+    color: #485258;
 }
 
 .image {
@@ -69,20 +79,18 @@ a {
     padding: 0 5px
 }
 
-.list {
-}
-
-
 .search {
     background-color: #FB896B;
     border-top-left-radius: 24px;
+}
+
+.block {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 
-/*______________________*/
 .cro {
     background-color: #FB6B6B;
 }
@@ -95,6 +103,7 @@ a {
 .other {
     background-color: #FBD36B;
     border-bottom-left-radius: 24px;
+    color: #485258;
 }
 
 .booking {
