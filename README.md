@@ -1,17 +1,8 @@
-# Верстка легкой grid сетки
+# Layout of easy grid cell
 
-### Сначала данный проект был создан для тренировки работы с git
+### the result is
+![result.png](img%2Fresult.png)
 
-----
-**Поэтому здесь много таких моментов**
+### the layout was made according to the [layout from Figma](https://www.figma.com/file/hORpdUdQMknkL6Iv2xHkOM/grid-easy?type=design&node-id=0%3A1&mode=design&t=pzCcggyrO07P6AD5-1)
 
-~~И вот таких~~
-
-[Яндекс](https://www.yandex.ru "Я Yandex!")
-
- ```
- cd grid-easy
- touch README.md
- git add --all
- git push
- ```
+This project is not yet adaptive
