@@ -14,7 +14,7 @@ body {
 }
 
 .main-wrapper {
-    width: 90%;
+    width: 1200px;
     height: 90vh;
     margin: 2% auto;
     display: grid;
@@ -71,7 +71,6 @@ button {
 }
 
 .booking .wrapper {
-    width: 50%;
     margin-left: 6%;
 }
 
@@ -155,9 +154,18 @@ button {
 
 @media (max-width: 1200px) {
     .main-wrapper {
-        height: 100%;
         width: 1000px;
         grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 1fr 1.5fr;
+    }
+
+    .up {
+        align-items: center;
+    }
+
+    .down {
+        align-items: center;
+        margin-bottom: 0;
     }
 
     .social {
@@ -188,19 +196,33 @@ button {
 @media (max-width: 1000px) {
     .main-wrapper {
         width: 768px;
-        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 768px) {
     .main-wrapper {
         width: 480px;
-        grid-auto-columns: 1fr;
+        height: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr) 1.5fr;
+    }
+
+    .title {
+        font-size: 16px;
+    }
+
+    .item {
+        font-size: 12px;
+    }
+
+    .search {
+        border-top-right-radius: 24px;
     }
 
     .cro {
         grid-column: 1/2;
         grid-row: 2/3;
+        border-top-right-radius: 0;
     }
 
     .social {
@@ -213,5 +235,18 @@ button {
 
     .booking {
         grid-row: 5/6;
+        height: 200px;
+    }
+
+    button {
+        color: #485258;
+        font-size: 12px;
+        font-weight: 500;
+        padding: 6px;
+    }
+
+    .booking .wrapper {
+        width: 75%;
+        margin: 0 auto;
     }
 }
