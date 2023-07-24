@@ -152,3 +152,66 @@ button {
 .other .item:hover {
     background: #FB6B6B;
 }
+
+@media (max-width: 1200px) {
+    .main-wrapper {
+        height: 100%;
+        width: 1000px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .social {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .cro {
+        border-top-right-radius: 24px;
+    }
+
+    .social {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .other {
+        border-bottom-left-radius: 0;
+    }
+
+    .booking {
+        grid-column: 1/3;
+        grid-row: 3/4;
+        border-bottom-left-radius: 24px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .main-wrapper {
+        width: 768px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .main-wrapper {
+        width: 480px;
+        grid-auto-columns: 1fr;
+    }
+
+    .cro {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .social {
+        grid-row: 3/4;
+    }
+
+    .other {
+        grid-row: 4/5;
+    }
+
+    .booking {
+        grid-row: 5/6;
+    }
+}
